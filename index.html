@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "reset.css">
     <link rel = "stylesheet" href = "styles.css">
     <title>Etch-a-sketch!</title>
 </head>
 <body>
     <div class="flex-container">
-        <div class="title"><h1>Sketchpad</h1></div>
-        <div class="mode">Mode: Coloring</div>
+        <div class="title"><h1>ETCH-A-SKETCH</h1></div>
+        <div class="mode">Coloring Mode: ON</div>
         <div class="content">
             <div class="board"></div>
             <div class="buttons">
@@ -21,7 +20,7 @@
                 <button onclick ="changeColour('random')">Random</button>
                 <button onclick = "resetBoard()">Reset</button>
             </div>
-            <div>
+            <div class = size>
                 <input 
                 type = "text" 
                 placeholder = "Size of Board" 
@@ -29,6 +28,7 @@
                 onchange="changeSize(this.value)"/>
                 <button>Set Size</button>
             </div>
+            <div class="error">Input must be between 2 & 100 </div>
        </div>
     </div>
 </body>
